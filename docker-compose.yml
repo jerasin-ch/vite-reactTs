@@ -1,0 +1,12 @@
+version: '3.9'
+
+services:
+  backoffice:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    container_name: backoffice
+    volumes:
+      - ./src:/app/src
+    ports:
+      - 5173:5173
